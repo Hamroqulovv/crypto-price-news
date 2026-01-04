@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: crypto-bot
+    env_file:
+      - .env
+    volumes:
+      - ./main.db:/app/main.db
+      - ./data:/app/data
+    restart: unless-stopped
+    # If you want to forward logs or expose a healthcheck port, add ports/healthcheck here

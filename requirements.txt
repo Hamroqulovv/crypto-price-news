@@ -1,0 +1,19 @@
+# Telegram bot framework
+aiogram==3.4.1
+
+# Environment variables
+python-dotenv==1.0.1
+
+# HTTP requests
+requests==2.32.3
+
+# Async scheduler (tasks, intervals)
+APScheduler==3.10.4
+
+# Timezone handling (APScheduler dependency, prod uchun pin qilinadi)
+pytz==2024.1
+
+# Async support utilities (aiogram ichki ishlatadi, prod barqarorlik uchun)
+aiohttp==3.9.5
+yarl==1.9.4
+multidict==6.0.5
